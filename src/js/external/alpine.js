@@ -1,4 +1,4 @@
-import Alpine from "alpinejs";
+import Alpine from "./module.esm.min.js";
 
 window.Alpine = Alpine;
 

@@ -1,4 +1,5 @@
 const options = require("./config"); //options from config.js
+const defaultTheme = require("tailwindcss/defaultTheme")
 
 const allPlugins = {
   typography: require("@tailwindcss/typography"),
@@ -20,7 +21,11 @@ module.exports = {
   content: ["./src/**/*.{html,js,php}"],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Rubik', ...defaultTheme.fontFamily.sans],
+      }
+    },
   },
   plugins: plugins,
 };

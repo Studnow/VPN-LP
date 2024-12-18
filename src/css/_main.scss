@@ -1,4 +1,36 @@
 //All styles can be added here.
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900
+
+.rubik-primary {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik-Medium'),
+       url('../fonts/Rubik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik-Bold'),
+       url('../fonts/Rubik-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 .hero-heading {
   @apply mb-10 text-4xl font-medium text-white;
 }
@@ -182,3 +214,8 @@ pre[class*="language-"]::selection {
 .token.variable {
   color: #d6deeb;
 }
+
+// body {
+//   font-family: 'Rubik', sans-serif !important;
+//   font-weight: 400;
+// }

@@ -234,6 +234,6 @@ exports.default = series(
 
 exports.prod = series(
   prodClean, // Clean Build Folder
-  parallel(prodStyles, prodScripts, devExt, prodImages, prodHTML, prodFonts, prodThirdParty), //Run All tasks in parallel
+  parallel(prodStyles, prodScripts, devExt, copyAlpine, prodImages, prodHTML, prodFonts, prodThirdParty), //Run All tasks in parallel
   buildFinish
 );
